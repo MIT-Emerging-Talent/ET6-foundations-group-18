@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-A module for finding if an integer is prime.
+Module for finding if an integer is prime.
 
 Module contents:
     - IsPrime: finds if an integer is prime.
@@ -30,6 +30,8 @@ def IsPrime(a: int) -> str:
     prime
     >>> IsPrime(2.5)
     invalid input
+    >>> IsPrime(-1)
+    not prime
     """
     if not isinstance(a, int):
         return "invalid input"
