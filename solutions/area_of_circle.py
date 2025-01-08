@@ -33,8 +33,3 @@ def calculate_circle_area(radius: float) -> float:
         raise ValueError("Radius cannot be negative")
     
     return math.pi * radius**2
-
-if _name_ == "_main_":
-    radius = 5
-    area = calculate_circle_area(radius)
-    print("Area of the circle:", area)
