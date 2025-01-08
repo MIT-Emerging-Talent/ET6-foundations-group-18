@@ -1,12 +1,16 @@
+"""
+Unit test module for area_of_circle.py
+
+Module contents:
+    - Unit Test cases for calculating the area of circle
+
+Created on 01 01 2025
+@author: Raghad
+"""
+
 import unittest
 import math
 from solutions.area_of_circle import calculate_circle_area
-# Assuming the function is already defined as:
-# def calculate_circle_area(radius):
-#     if radius < 0:
-#         return "Radius cannot be negative"
-#     area = math.pi * radius**2
-#     return area
 
 class TestCircleArea(unittest.TestCase):
 
