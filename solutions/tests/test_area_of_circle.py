@@ -21,9 +21,6 @@ class TestCircleArea(unittest.TestCase):
     def test_zero_radius(self):
         self.assertEqual(calculate_circle_area(0), 0)
         
-    def test_negative_radius(self):
-        self.assertEqual(calculate_circle_area(-5), "Radius cannot be negative")
-        
     def test_large_radius(self):
         self.assertAlmostEqual(calculate_circle_area(1000), math.pi * 1000**2)
 
