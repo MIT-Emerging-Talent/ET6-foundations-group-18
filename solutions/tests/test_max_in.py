@@ -4,13 +4,12 @@
 Module: test_max_in
 
 Description:
-    This module contains unit tests for the 'max_in' function defined 
+    This module contains unit tests for the 'max_in' function defined
     in the 'max_in.py' module.
 
 Author: Tagwa Hashim
 
 """
-
 
 import unittest
 from ..max_in import max_in
@@ -35,7 +34,6 @@ class TestMaxIn(unittest.TestCase):
     def test_empty_list(self):
         """It should raise AssertionError for empty list."""
         with self.assertRaises(ValueError):
-
             self.assertEqual(max_in([]), "List cannot be empty.")
 
     def test_single_element_list(self):
@@ -45,13 +43,11 @@ class TestMaxIn(unittest.TestCase):
     def test_non_list_input(self):
         """It should raise AssertionError for non list input."""
         with self.assertRaises(ValueError):
-
             self.assertEqual(max_in("not a list"), "Input must be a list.")
 
     def test_non_numeric_list(self):
         """It should raise AssertionError for non-numeric list elements."""
         with self.assertRaises(TypeError):
-
             self.assertEqual(
                 max_in([1, 2, "three"]), "List contains non-numeric elements."
             )
