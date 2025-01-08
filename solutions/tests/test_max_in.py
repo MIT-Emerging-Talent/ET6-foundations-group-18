@@ -13,10 +13,10 @@ Author: Tagwa Hashim
 
 
 import unittest
-from solutions.max_in import max_in
+from ..max_in import max_in
 
 
-class TestMax_in(unittest.TestCase):
+class TestMaxIn(unittest.TestCase):
     """Test the max_in function"""
 
     def test_positive_integers(self):
@@ -33,23 +33,23 @@ class TestMax_in(unittest.TestCase):
         self.assertEqual(max_in([1, -5.5, -3]), 1)
 
     def test_empty_list(self):
-        """"""
+        """It should raise AssertionError for empty list."""
         with self.assertRaises(ValueError):
 
             self.assertEqual(max_in([]), "List cannot be empty.")
 
     def test_single_element_list(self):
-        """"""
+        """It should return the single element."""
         self.assertEqual(max_in([5]), 5)
 
     def test_non_list_input(self):
-        """"""
+        """It should raise AssertionError for non list input."""
         with self.assertRaises(ValueError):
 
             self.assertEqual(max_in("not a list"), "Input must be a list.")
 
-    def test_list_with_non_numeric_element(self):
-        """"""
+    def test_non_numeric_list(self):
+        """It should raise AssertionError for non-numeric list elements."""
         with self.assertRaises(TypeError):
 
             self.assertEqual(
