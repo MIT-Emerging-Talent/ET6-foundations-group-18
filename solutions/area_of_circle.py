@@ -7,7 +7,9 @@ Module contents:
 Created on 01 04 2025
 @author: Raghad
 """
+
 import math
+
 
 def area_of_circle(radius: float) -> float:
     """Calculate the area of a circle given its radius.
@@ -27,8 +29,9 @@ def area_of_circle(radius: float) -> float:
     """
     if radius < 0:
         raise ValueError("Radius cannot be negative")
-    
+
     return math.pi * radius**2
+
 
 if __name__ == "__main__":
     radius = 5
