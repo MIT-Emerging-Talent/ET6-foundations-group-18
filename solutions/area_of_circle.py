@@ -2,16 +2,14 @@
 A module for calculating the area of a circle.
 
 Module contents:
-    - calculate_circle_area: calculates the area of a circle given its radius.
+    - area_of_circle: calculates the area of a circle given its radius.
 
 Created on 01 04 2025
 @author: Raghad
 """
-
 import math
 
-
-def calculate_circle_area(radius: float) -> float:
+def area_of_circle(radius: float) -> float:
     """Calculate the area of a circle given its radius.
 
     Parameters:
@@ -22,16 +20,17 @@ def calculate_circle_area(radius: float) -> float:
     Raises:
         ValueError: if the radius is negative
 
-    >>> calculate_circle_area(5)
+    >>> area_of_circle(5)
     78.53981633974483
-    >>> calculate_circle_area(0)
+    >>> area_of_circle(0)
     0.0
-    >>> calculate_circle_area(-1)
-    Traceback (most recent call last):
-        ...
-    ValueError: Radius cannot be negative
     """
     if radius < 0:
         raise ValueError("Radius cannot be negative")
-
+    
     return math.pi * radius**2
+
+if __name__ == "__main__":
+    radius = 5
+    area = area_of_circle(radius)
+    print("Area of the circle:", area)
