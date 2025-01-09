@@ -9,7 +9,7 @@ A module gives a result of adding two numbers.
 """
 
 
-def Addition(num1, num2):
+def addition(num1, num2):
     """
     Adds two numbers and returns their sum.
 
@@ -24,11 +24,11 @@ def Addition(num1, num2):
       TypeError: If either num1 or num2 is not a number (int or float).
 
     Examples:
-      >>> Addition(3, 5)
+      >>> addition(3, 5)
       8
-      >>> Addition(2.5, 3.7)
+      >>> addition(2.5, 3.7)
       6.2
-      >>> Addition("hello", 2.718)
+      >>> addition("hello", 2.718)
       Traceback (most recent call last):
               ...
       AssertionError: Both arguments must be numbers (int or float).
