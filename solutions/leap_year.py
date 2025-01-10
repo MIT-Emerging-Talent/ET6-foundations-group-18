@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 The module checks whether a given year is a leap year.
 create by Muna Sattouf on January 9, 2025
