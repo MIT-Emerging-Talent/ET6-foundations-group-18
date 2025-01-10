@@ -26,6 +26,8 @@ def area_of_circle(radius: float) -> float:
     78.53981633974483
     >>> area_of_circle(0)
     0.0
+    >>> area_of_circle(3.5)
+    38.48451000647496
     """
     if radius < 0:
         raise ValueError("Radius cannot be negative")
