@@ -1,5 +1,5 @@
 """
-Test for the leap_year function
+Test for leap_year function
 Created and completed by Muna Sattouf on January 10, 2024
 """
 
