@@ -4,7 +4,7 @@ Created and completed by Muna Sattouf on January 10, 2024
 """
 
 import unittest
-from leap_year import leap_year
+from solutions.leap_year import leap_year
 
 class TestLeapYear(unittest.TestCase):
     """
