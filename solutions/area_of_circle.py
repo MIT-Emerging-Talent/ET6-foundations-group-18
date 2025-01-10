@@ -10,6 +10,7 @@ Created on 01 04 2025
 
 import math
 
+
 # Define a function to calculate the area of a circle.
 def area_of_circle(radius: float) -> float:
     """Calculate the area of a circle given its radius.
