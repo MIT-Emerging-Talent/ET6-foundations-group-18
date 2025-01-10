@@ -1,6 +1,6 @@
 """
-Test for leap_year function
-Created and completed by Muna Sattouf on January 10, 2024
+Test for leap_year function.
+Created and completed by Muna Sattouf on January 10, 2024.
 """
 
 import unittest
