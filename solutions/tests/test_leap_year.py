@@ -1,5 +1,10 @@
+"""
+Test for the leap_year function
+Created and completed by Muna Sattouf on January 10, 2024
+"""
+
 import unittest
-for leap_year import leap_year
+from leap_year import leap_year
 
 class TestLeapYear(unittest.TestCase):
     """
@@ -28,7 +33,7 @@ class TestLeapYear(unittest.TestCase):
         """
         Tests a year not divisble by 4
         """
-        self.assertFalse(2023)
+        self.assertFalse(leap_year(2023))
         
     def test_invalid_type(self):
         """

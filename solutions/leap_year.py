@@ -1,5 +1,7 @@
 """
 The module checks whether a given year is a leap year.
+create by Muna Sattouf on January 9, 2025
+Completed on January 10, 2024
 
 A year is a leap year if it is divisible by 4,
 and if it is divisible by 100, it must also be divisible by 400.
@@ -28,4 +30,4 @@ def leap_year(year: int) -> bool:
     if year < 0:
         raise ValueError("Year must be positive integer")
     
-    return(year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+    return year % 4 == 0 or (year % 4 == 0 and year % 100 != 0)
