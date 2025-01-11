@@ -6,14 +6,6 @@ corresponding hexadecimal representations. It validates the input to ensure
 that it contains only binary digits (0s and 1s) and performs the conversion 
 accurately.
 
-Functions:
-    - binary_to_hex(binary_str): Converts a binary string to its hexadecimal representation.
-
-Usage Example:
-    >>> from binary_to_hex import binary_to_hex
-    >>> binary_to_hex("1101")
-    'D'
-
 """
 
 def binary_to_hex(binary_str):
