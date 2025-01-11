@@ -9,17 +9,18 @@ A year is a leap year if it is divisible by 4,
 and if it is divisible by 100, it must also be divisible by 400.
 """
 
+
 def leap_year(year: int) -> bool:
     """
     Checks whether the given year is a leap year.
-    
+
     Argument:
     year, a positive integer
-    
+
     Returns:
     boolean: True if the year is a leap year, false otherwise.
-    
-    Examples: 
+
+    Examples:
     >>> leap_year(2024)
     True
     >>> leap_year(1900)
@@ -31,5 +32,5 @@ def leap_year(year: int) -> bool:
         raise ValueError("Year must be an integer")
     if year < 0:
         raise ValueError("Year must be positive integer")
-    
-    return (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
