@@ -8,16 +8,17 @@ def decimal_to_binary(decimal: int)-> str:
     This function takes a decimal number from command line as paramter,
     and returns its binary representation.
     
-    Example: DecimalToBinary('binary', 392)
+    Example: decimal_to_binary('binary', 392)
     >>> 110001000
     
     """
     if not isinstance(decimal, int):
         
         raise ValueError("Input must be an integer")
+    
     if decimal < 0:
         decimal = -decimal
-        return '-'+ DecimalToBinary(decimal)
+        return '-'+ decimal_to_binary(decimal)
     if decimal == 0:
         return '0'
     binarynumber = ' '
@@ -26,7 +27,7 @@ def decimal_to_binary(decimal: int)-> str:
         decimal = decimal // 2
     return binarynumber
 
-def BinaryToDecimal(binary: str)-> int:
+def binary_to_decimal(binary: str)-> int:
     """
     This function takes a binary number from command line as paramter,
     and returns its decimal representation.
@@ -41,7 +42,7 @@ def BinaryToDecimal(binary: str)-> int:
         decimalnumber = decimalnumber*2 + int(c)
     return decimalnumber
 
-def binarydecimalconversion(conversion_type: str, number:str)-> str:
+def binary_decimal_conversion(conversion_type: str, number:str)-> str:
     """
     This is the main function: It 'coordinates' and decides
     which of the two above functions to use
@@ -49,12 +50,12 @@ def binarydecimalconversion(conversion_type: str, number:str)-> str:
     if conversion_type == "decimal":
         if not all(c in '01' for c in number):
             raise ValueError("If decimal conversion, input must be in binary, consisting only of 0 and 1")
-        return BinaryToDecimal(number)
+        return binary_to_decimal(number)
     elif conversion_type == "binary":
         if not number.isdigit():
             raise ValueError("If binary conversion, input must be a positive integer")
         decimal = int(number)
-        return DecimalToBinary(decimal)
+        return decimal_to_binary(decimal)
     else: 
         raise ValueError("Conversion Type must be 'binary' or 'decimal ' ")
     
@@ -76,11 +77,11 @@ if __name__== "__main__":
         if not all(c in '01' for c in number):
             print("Error: for decimal conversion, input must be in binary, containing only 1 and 0")
             sys.exit(1)
-        result = BinaryToDecimal(number)
+        result = binary_to_decimal(number)
         
     elif conversion_type == 'binary':
         if not number.isdigit():
             print("Error: for binary conversion, input must be positive integer")
             sys.exit(1)
-        result =  DecimalToBinary(int(number))
+        result =  decimal_to_binary(int(number))
     print(result)
