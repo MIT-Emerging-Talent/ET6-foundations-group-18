@@ -13,12 +13,12 @@ def hex_to_binary(hex_string):
     Convert a hexadecimal string to its binary representation.
 
     Parameters:
-        hex_string (str): A string representing a hexadecimal number. 
-                          It can include a leading '0x' prefix or not.
+        hex_string (str): A string representing a hexadecimal number.
+        It can include a leading '0x' prefix or not.
 
     Returns:
         str: A binary string representation of the given hexadecimal number,
-             with leading zeros preserved.
+        with leading zeros preserved.
 
     Raises:
         ValueError: If the input string is not a valid hexadecimal number.
