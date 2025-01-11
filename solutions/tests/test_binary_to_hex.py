@@ -1,9 +1,7 @@
 """
 Module: Binary to Hexadecimal Converter
 
-This module provides a utility function to convert binary strings to their
-corresponding hexadecimal representations. It validates the input to ensure
-that it contains only binary digits (0s and 1s) and performs the conversion
+It validates the input to ensure that it contains only binary digits (0s and 1s) and performs the conversion
 accurately.
 
 Author: Marc Darazi
@@ -14,11 +12,15 @@ from solutions.binary_to_hex import binary_to_hex
 
 
 class TestBinaryToHex(unittest.TestCase):
+    """
+    Testing the binary-to-hex function.
+    """
     # Unit Tests
     def test_binary_to_hex_valid(self):
         """
         Test binary_to_hex with valid binary input.
         Asserts the correct hexadecimal output is produced.
+        it should give D
         """
         assert binary_to_hex("1101") == "D"
 
