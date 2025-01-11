@@ -3,7 +3,7 @@ A module for converting between binary and decimal numbers.
 Created by Muna Sattouf on 29/12/2024
 Completed on 1/1/2025
 """
-def DecimalToBinary(decimal: int)-> str:
+def decimal_to_binary(decimal: int)-> str:
     """
     This function takes a decimal number from command line as paramter,
     and returns its binary representation.
@@ -13,6 +13,7 @@ def DecimalToBinary(decimal: int)-> str:
     
     """
     if not isinstance(decimal, int):
+        
         raise ValueError("Input must be an integer")
     if decimal < 0:
         decimal = -decimal
