@@ -13,7 +13,7 @@ Module Contents:
     - cumulative_sum(numbers: list) -> list:
         Computes and returns a list of cumulative sums from the input list.
 
-Author: Falaq Youniss
+Author: Falaq Youniss.
 Date: 29/12/2024
 """
 
@@ -44,9 +44,9 @@ def cumulative_sum(numbers: list) -> list:
     # Validate input
     assert numbers is not None, "Input cannot be None."
     assert isinstance(numbers, list), "Input must be a list of numeric values."
-    assert all(
-        isinstance(num, (int, float)) for num in numbers
-    ), "All elements in the list must be numeric."
+    assert all(isinstance(num, (int, float)) for num in numbers), (
+        "All elements in the list must be numeric."
+    )
     # Compute cumulative sums
     cumulative_list = []
     current_sum = 0
