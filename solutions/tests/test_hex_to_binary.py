@@ -9,7 +9,7 @@ Author: Marc Darazi
 """
 
 import unittest
-from hex_to_binary import hex_to_binary
+from ..hex_to_binary import hex_to_binary
 
 
 class TestHexToBinary(unittest.TestCase):
