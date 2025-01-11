@@ -13,7 +13,7 @@ Module Contents:
     - cumulative_sum(numbers: list) -> list:
         Computes and returns a list of cumulative sums from the input list.
 
-Author: Falaq Youniss
+Author: Falaq Youniss.
 Date: 29/12/2024
 """
 
