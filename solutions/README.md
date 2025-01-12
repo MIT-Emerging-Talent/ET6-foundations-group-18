@@ -91,7 +91,7 @@
   
 - **written by:** Muna (Muna-S)
   
-- **reviewed by:** TagwaHashim (TagwaHashim), Falaq (FalaqMajeed)
+- **reviewed by:** TagwaHashim (TagwaHashim), Falaq (FalaqMajeed), Saad (sashour82)
 
 ### leap_year
 
@@ -131,7 +131,7 @@
   
 - **written by:** Raghad (raghad598)
   
-- **reviewed by:** Mohammed (Moealfadil)
+- **reviewed by:** Heba (HebaShaheen), Mohammed (Moealfadil)
 
 ### hex_to_binary
 
