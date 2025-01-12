@@ -4,33 +4,33 @@
 Module for finding if an integer is prime.
 
 Module contents:
-    - IsPrime: finds if an integer is prime.
+    - is_prime: finds if an integer is prime.
 
 Created on XX XX XX
 @author: Mohammed Elfadil
 """
 
 
-def IsPrime(a: int) -> str:
+def is_prime(a: int) -> str:
     """Checks if an integer is prime.
     Parameter:
         a: int
     Return -> str: whether a is prime or not
     Raises:
         AssertionError: if the argument is not an integer
-    >>> IsPrime(0)
+    >>> is_prime(0)
     not prime
-    >>> IsPrime(1)
+    >>> is_prime(1)
     not prime
-    >>> IsPrime(2)
+    >>> is_prime(2)
     prime
-    >>> IsPrime(4)
+    >>> is_prime(4)
     not prime
-    >>> IsPrime(7)
+    >>> is_prime(7)
     prime
-    >>> IsPrime(2.5)
+    >>> is_prime(2.5)
     invalid input
-    >>> IsPrime(-1)
+    >>> is_prime(-1)
     not prime
     """
     if not isinstance(a, int):
