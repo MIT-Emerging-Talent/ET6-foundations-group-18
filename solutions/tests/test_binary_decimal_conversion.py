@@ -34,7 +34,7 @@ class TestBinaryDecimalConversion(unittest.TestCase):
 
     def test_zero_binary_to_decimal(self):
         """should return 0"""
-        self.assertEqual(binary_to_decimal("0"), "0")
+        self.assertEqual(binary_to_decimal("0"), 0)
 
     def test_large_decimal_to_binary(self):
         """Should correctly handle large decimal numbers"""
