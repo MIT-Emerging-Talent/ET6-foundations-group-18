@@ -18,6 +18,8 @@ from solutions.binary_decimal_conversion import (
 
 
 class TestBinaryDecimalConversion(unittest.TestCase):
+    """Tests for binaru_decimal_conversion function"""
+
     def test_decimal_to_binary(self):
         """Should convert positive decimal numbers to binary"""
         self.assertEqual(decimal_to_binary(10), "1010")
@@ -32,7 +34,7 @@ class TestBinaryDecimalConversion(unittest.TestCase):
 
     def test_zero_binary_to_decimal(self):
         """should return 0"""
-        self.assertEqual(binary_to_decimal(0), "0")
+        self.assertEqual(binary_to_decimal("0"), "0")
 
     def test_large_decimal_to_binary(self):
         """Should correctly handle large decimal numbers"""
