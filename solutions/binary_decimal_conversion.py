@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 A module for converting between binary and decimal numbers.
 Created by Muna Sattouf on 29/12/2024

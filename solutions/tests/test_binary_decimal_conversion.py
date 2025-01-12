@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
 """
 Module: test_binary_decimal_conversion
 contains test cases for the solution code.
