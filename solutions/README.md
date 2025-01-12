@@ -91,7 +91,7 @@
   
 - **written by:** Muna (Muna-S)
   
-- **reviewed by:** TagwaHashim (TagwaHashim)
+- **reviewed by:** TagwaHashim (TagwaHashim), Falaq (FalaqMajeed)
 
 ### leap_year
 
@@ -147,4 +147,4 @@
   
 - **written by:** Marc (MarcDarazi99)
   
-- **reviewed by:** Mohammed (Moealfadil), Heba (HebaShaheen)
+- **reviewed by:** Mohammed (Moealfadil), Heba (HebaShaheen), Falaq (FalaqMajeed)
