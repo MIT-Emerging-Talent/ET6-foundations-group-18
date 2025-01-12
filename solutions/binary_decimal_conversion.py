@@ -39,8 +39,11 @@ def binary_to_decimal(binary: str) -> int:
     This function takes a binary number from command line as paramter,
     and returns its decimal representation.
 
-    Example: BinaryToDecimal('decimal', 10011101)
+    Example: binary_to_decimal('decimal', 10011101)
     >>> 157
+
+    Example: binary_to_decimal('decimal', 'hello')
+    >>> ValueError: Input must only contain 0s and 1s
     """
     if not all(c in "01" for c in binary):
         raise ValueError("Input must only contain 0s and 1s")

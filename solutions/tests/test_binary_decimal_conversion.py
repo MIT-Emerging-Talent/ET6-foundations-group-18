@@ -10,7 +10,7 @@ Completed on January 2, 2024
 """
 
 import unittest
-from binary_decimal_conversion import (
+from solutions.binary_decimal_conversion import (
     decimal_to_binary,
     binary_decimal_conversion,
     binary_to_decimal,
