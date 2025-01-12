@@ -141,14 +141,6 @@
   
 - **reviewed by:** Mohammed (Moealfadil)
 
-### hex_to_binary
-
-- **description:** Converts a hexadecimal string to its binary equivalent
-  
-- **written by:** Marc (MarcDarazi99)
-  
-- **reviewed by:** Mohammed (Moealfadil)
-
 ### binary_to_hex
 
 - **description:** Converts a binary string to its hexadecimal equivalent
