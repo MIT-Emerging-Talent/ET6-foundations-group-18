@@ -1,7 +1,6 @@
 """
 Module: test_binary_decimal_conversion
 contains test cases for the solution code.
-
 Created by Muna Sattouf on January 2, 2024
 Completed on January 2, 2024
 """
@@ -16,7 +15,7 @@ class TestBinaryDecimalConversion(unittest.TestCase):
                 
     def test_binary_to_decimal(self):
         """Should convert positive binary to decimal"""
-        self.assertEqual(binary_to_decimal(10011101), 157) 
+        self.assertEqual(binary_to_decimal('10011101'), 157) 
         
     def test_zero_decimal_to_binary(self):
         """should return 0"""
@@ -40,7 +39,7 @@ class TestBinaryDecimalConversion(unittest.TestCase):
     
     def test_binarydecimalconversion_binary(self):
         """Should convert decimal to binary when conversion type is binary"""
-        self.assertEqual(binary_decimal_conversion('binary', '392'), 110001000)
+        self.assertEqual(binary_decimal_conversion('binary', '392'), '110001000')
         
     def test_invalid_decimal_input(self):
         """Should raise ValueError for non-integer decimal input"""
