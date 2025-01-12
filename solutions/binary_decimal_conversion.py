@@ -12,9 +12,9 @@ def decimal_to_binary(decimal: int) -> str:
 
     Example: DecimalToBinary('binary', 392)
     >>> 110001000
-    
+
     """
-    
+
     if not isinstance(decimal, int):
         raise ValueError
     """
