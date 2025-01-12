@@ -27,7 +27,7 @@ def decimal_to_binary(decimal: int) -> str:
         return "-" + decimal_to_binary(decimal)
     if decimal == 0:
         return "0"
-    binarynumber = " "
+    binarynumber = ""
     while decimal > 0:
         binarynumber = str(decimal % 2) + binarynumber
         decimal = decimal // 2
