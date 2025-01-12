@@ -109,9 +109,9 @@
   
 - **reviewed by:** Saad (sashour82)
 
-### decimal_to_binary
+### binary_decimal_conversion
 
-- **description:** Give the binary number for a decimal
+- **description:** Gives the binary number for a decimal and vice versa
   
 - **written by:** Heba (HebaShaheen)
   
